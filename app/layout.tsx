@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "RouteWise — Chennai Delivery Hub",
+  description: "Autonomous AI delivery dispatch assistant for logistics operations",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen" suppressHydrationWarning>
+        {children}
+      </body>
+    </html>
+  );
+}
+
